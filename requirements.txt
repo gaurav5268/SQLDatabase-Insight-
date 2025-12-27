@@ -4,8 +4,8 @@ numpy
 python-dotenv
 SpeechRecognition
 
-langchain
-langchain-google-genai
-langchain-groq
+langchain==0.0.330
+langchain-google-genai==0.0.6
+langchain-groq==0.0.1
 
 plotly
