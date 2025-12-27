@@ -138,3 +138,11 @@ with st.sidebar:
             <span style="color: #c62828; font-weight: bold;">Database Disconnected</span>
         </div>
         """, unsafe_allow_html=True)
+    st.markdown("---")
+
+    st.link_button(
+        "View Code on GitHub",
+        "https://github.com/gaurav5268/SQLDatabase-Insight",
+        use_container_width=True
+    )
+

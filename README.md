@@ -1,4 +1,6 @@
-# Natural Language Database Insights Project (Text-to-SQL + CSV Dataset)
+# Natural Language Database Insights Project 
+
+project demo - 
 
 A database insights and analytics project that allows users to explore and analyze structured database records using natural-language queries.
 
