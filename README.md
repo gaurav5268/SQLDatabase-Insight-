@@ -1,6 +1,6 @@
 # Natural Language Database Insights Project 
 
-project demo - 
+project demo - https://naturallanguage-sqldatabase-insight.streamlit.app/
 
 A database insights and analytics project that allows users to explore and analyze structured database records using natural-language queries.
 
