@@ -2,7 +2,7 @@ import streamlit as st
 from main import (
     chain, parse_llm_response, run_sql,
     detect_chart_request, auto_detect_chart_type,
-    create_chart, mic_input_sr, get_connection
+    create_chart, mic_input_sr, get_connection, normalize_llm_output
 )
 
 st.set_page_config(
@@ -55,8 +55,9 @@ if user_input:
         with st.spinner("🔍 Processing your query..."):
             try:
                 requested_chart_type = detect_chart_request(user_input)
+                resp = chain.invoke({"question": user_input})
+                raw_output = normalize_llm_output(resp).strip()
 
-                raw_output = chain.invoke({"question": user_input}).content.strip()
                 res, sql_query = parse_llm_response(raw_output)
 
                 if not sql_query:
